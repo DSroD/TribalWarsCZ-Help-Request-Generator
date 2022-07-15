@@ -43,17 +43,11 @@ function find_slowest_unit(distance: number)
     var minutes = parts[1]
     var seconds = parts[2]
 
-    console.log(VARS.first_arrival_time)
-    console.log(hours, minutes, seconds)
-
     var arrival_minutes = parseFloat(minutes) + parseFloat(hours) * 60 + parseFloat(seconds) / 60
     var unit_array: [MaybeUnit, number][] = window.game_data.units
         .map(x => [x, distance * unit_base_speed[x] / VARS.game_speed] as [MaybeUnit, number])
-    console.log(arrival_minutes)
     unit_array.push([null, Infinity] as [null, number])
-        var slowest_unit = unit_array.reduceRight((a, b) => 
-        {   console.log(a, b)
-            return a[1] > b[1] && b[1] > arrival_minutes ? b : a})
+        var slowest_unit = unit_array.reduceRight((a, b) => a[1] > b[1] && b[1] > arrival_minutes ? b : a)
 
     return slowest_unit[0]
 }
