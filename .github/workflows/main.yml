@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build thesis PDFs
+    runs-on: ubuntu-latest
+    container: { image: 'aergus/latex' }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3.1.1
+      - name: Yarn install & build
+        run: yarn && yarn build
+      - name: Push to the build branch
+        uses: dsrod/file-push-action@v1
+        with:
+          file_wildcards: |
+            main.js
+          ignore: |
+            src
+          target_branch: build
+          build_dir: 'dist'
+          verbose: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
