@@ -23,6 +23,12 @@ Lastest verzi naleznete v branchi `build` (resp. https://raw.githubusercontent.c
 
 `javascript: *sem vložte zkopírovaný kód skriptu z adresy*`
 
+### Provided stable build
+
+Nejedná se vždy o nejnovější stable verzi, ale nemusíte sami buildit ani aktualizovat.
+
+`javascript: void($.getScript('https://vmi680552.contaboserver.net/tw-help.js'))`
+
 ## Disclaimer
 
 Tento software je poskytovaný *"AS IS"* - není ručeno za udržování funkčnosti, příapdné chyby ani nekompatibility s jiným software.
