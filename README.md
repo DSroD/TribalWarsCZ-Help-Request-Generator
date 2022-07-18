@@ -1,12 +1,12 @@
-# TribalWarsCZ-Help-Request-Generator
+# Help Request Generator - Tribal Wars CZ
 
-Help request generator
+## Použití
 
 Na stránce s příchozím útokem se po použití skriptu objeví textové pole s předvyplněnými informacemi o příchozím útoku (naformátované BB kódy).
 Kliknutím na jednotku nad textovým polem zvolíte vámi očekávanou nejpomalejší jednotku v útoku.
 
 
-## Použití
+## Instalace
 
 ### Build from source (doporučené)
 
