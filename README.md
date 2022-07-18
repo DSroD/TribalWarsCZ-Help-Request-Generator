@@ -19,9 +19,9 @@ Pro stable verze builděte z příslušeného tagu s označením stable
 
 `javascript: *sem vložte zbuilděný skript*`
 
-### Lastest verze
+### Latest verze
 
-Lastest verzi naleznete v branchi `build` (resp. https://raw.githubusercontent.com/DSroD/TribalWarsCZ-Help-Request-Generator/build/main.js)
+Latest verzi naleznete v branchi `build` (resp. https://raw.githubusercontent.com/DSroD/TribalWarsCZ-Help-Request-Generator/build/main.js)
 
 `javascript: *sem vložte zkopírovaný kód skriptu z adresy*`
 
